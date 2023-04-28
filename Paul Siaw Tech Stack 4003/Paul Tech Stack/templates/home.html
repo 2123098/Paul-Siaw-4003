@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Job Search Homepage</title>
+	<link rel="stylesheet" href="../static/css/home.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> 
+</head>
+<body>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<h2 class="logo">The Finder</h2>
+			</div>
+
+			<div class="menu">
+				<ul>
+					<li><a href="{{ url_for('home') }}">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">SERVICE</a></li>
+					<li><a href="">CONTACT</a></li>
+					<li><a href="{{ url_for('home') }}">SIGNUP</a></li>
+				</ul>
+			</div>
+
+			<div class="search">
+				<input class="searchbox" type="search" name="" placeholder="Search Jobs">
+				<a href="#"> <button class="searchbtn">Search</button></a>
+			</div>
+		</div>
+		<div class="content">
+			<h1>Easy Access  <br><span>To Your</span> <br>Dream Job</h1>
+			<p class="par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam enim suscipit 
+				<br> aliquam accusantium esse. Aliquam provident aut velit, accusantium non 
+				<br> autem dolore id odit earum vitae labore! Maxime, impedit ad.
+			</p>
+			<button class="employerbtn"><a href="{{ url_for('login') }}">JOIN AS EMPLOYER /<br>A COMPANY</a></button>
+            <button class="employerbtn"><a href="{{ url_for('login') }}">JOIN AS <br>AN INDIVIDUAL</a></button>
+
+			
+			
+			
+			<div class="form">
+				<form action="/login" method="post">
+					<h3>Login</h3>
+					<label for="email">email:</label>
+					<input type="text" id="email" name="email"><br>
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password"><br>
+					<input type="submit" value="Login">
+				</form>
+				<p class="liw">Log in with</p>
+
+				<div class="icons">
+					<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+					<a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+					<a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+					<a href="#"><ion-icon name="logo-google"></ion-icon></a>
+					<a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+				</div>
+			</div>
+		
+	
+
+
+		</div>
+	</div>
+	<div>
+		<div class="joblists-container">
+			<h2>Jobs</h2>
+	  
+			<input class="job-search" type="text" placeholder="Search here..." />
+	  
+			<div class="jobs"></div>
+		  </div>
+
+	</div>
+	<footer>
+        <p>&copy; 2023 Job Search Homepage</p>
+    </footer>
+
+	<script src="../static/main.js"></script>
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

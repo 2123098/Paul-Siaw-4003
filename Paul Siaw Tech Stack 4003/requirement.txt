@@ -1,0 +1,9 @@
+You must import flasks and mysql.connector. Simply pip install the packages.
+
+Database connectivity details
+cnx = mysql.connector.connect(user='root',
+                              password='yaa12345',
+                              host='localhost',
+                              database='user_table')
+
+From this website you can install mysql workbench. https://dev.mysql.com/downloads/workbench/ 
